@@ -7,6 +7,7 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { GlobalClickSpark } from '@/components/ui/global-click-spark'; // Import GlobalClickSpark
+import { Analytics } from '@vercel/analytics/next';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -45,8 +46,9 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
-        <GlobalClickSpark />
-        <div id="modal-root"></div>
+  <GlobalClickSpark />
+  <div id="modal-root"></div>
+  <Analytics />
       </body>
     </html>
   );
