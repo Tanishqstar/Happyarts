@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 60 56% 91%; /* Soft Beige */
+    --foreground: 60 10% 20%; /* Dark Brown for contrast on Beige */
+    --card: 60 56% 94%; /* Slightly lighter Beige for cards */
+    --card-foreground: 60 10% 20%;
+    --popover: 60 56% 91%;
+    --popover-foreground: 60 10% 20%;
+    --primary: 330 100% 71%; /* Vibrant Pink */
+    --primary-lighter: 330 100% 85%; /* Lighter pink for shimmer */
+    --primary-foreground: 0 0% 100%; /* White for contrast on Pink */
+    --secondary: 60 40% 85%; /* A slightly darker beige for secondary elements */
+    --secondary-foreground: 60 10% 20%;
+    --muted: 60 30% 88%; /* Even lighter beige for muted elements */
+    --muted-foreground: 60 10% 40%; /* Slightly lighter dark brown for muted text */
+    --accent: 51 100% 50%; /* Cheerful Yellow */
+    --accent-foreground: 60 10% 15%; /* Darker brown/black for contrast on yellow */
+    --destructive: 0 70% 50%; /* A compatible red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 60 30% 80%; /* Slightly darker beige for borders */
+    --input: 60 30% 80%;
+    --ring: 330 100% 71%; /* Pink for focus rings */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar specific variables - can be themed similarly if a sidebar is used */
+    --sidebar-background: 60 50% 88%;
+    --sidebar-foreground: 60 10% 20%;
+    --sidebar-primary: 330 100% 71%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 51 100% 55%;
+    --sidebar-accent-foreground: 60 10% 20%;
+    --sidebar-border: 60 30% 75%;
+    --sidebar-ring: 330 100% 71%;
+  }
+
+  .dark {
+    --background: 220 20% 10%; /* Dark Blue/Charcoal */
+    --foreground: 60 30% 96%; /* Light Beige for text */
+    --card: 220 20% 13%; 
+    --card-foreground: 60 30% 96%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 60 30% 96%;
+    --primary: 330 100% 71%; /* Vibrant Pink */
+    --primary-lighter: 330 100% 80%; /* Lighter pink for shimmer - dark mode adjusted */
+    --primary-foreground: 0 0% 10%; /* Dark text on pink for dark mode */
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 60 30% 96%;
+    --muted: 220 20% 15%;
+    --muted-foreground: 60 30% 70%;
+    --accent: 51 100% 50%; /* Cheerful Yellow */
+    --accent-foreground: 0 0% 10%; /* Dark text on yellow for dark mode */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 330 100% 71%; /* Pink for focus rings */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    --sidebar-background: 220 20% 12%;
+    --sidebar-foreground: 60 30% 90%;
+    --sidebar-primary: 330 100% 71%;
+    --sidebar-primary-foreground: 0 0% 10%;
+    --sidebar-accent: 51 100% 50%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 330 100% 71%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    @apply min-h-screen flex flex-col;
+  }
+  main {
+    @apply flex-grow;
+  }
+}
+
+@layer utilities {
+  .text-animated-gradient {
+    background-image: linear-gradient(
+      -225deg,
+      hsl(var(--primary)) 0%,
+      hsl(var(--accent)) 50%,
+      hsl(var(--primary)) 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+  }
+
+  .text-title-shimmer {
+    background-image: linear-gradient(
+      -225deg, /* Angle can be adjusted */
+      hsl(var(--primary)) 0%,
+      hsl(var(--primary-lighter)) 25%, /* Lighter pink for highlight */
+      hsl(var(--accent)) 50%,        /* Accent for more dynamism */
+      hsl(var(--primary-lighter)) 75%,
+      hsl(var(--primary)) 100%
+    );
+    background-size: 300% auto; /* Larger size for a slower, wider shimmer */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite; /* Slower animation duration */
+  }
+
+  .glow-wrapper {
+    position: relative;
+    z-index: 0; 
+  }
+
+  .glow-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -4px; /* Makes the pseudo-element 4px larger on all sides */
+    background: conic-gradient(
+      from var(--glow-angle, 0deg),
+      transparent 0%,
+      transparent 25%, /* Start of visible part of gradient */
+      hsl(var(--primary) / 0.5) 40%, /* Primary color with 50% opacity */
+      hsl(var(--accent) / 0.5) 50%,   /* Accent color with 50% opacity */
+      hsl(var(--primary) / 0.5) 60%, /* Primary color again */
+      transparent 75%, /* End of visible part of gradient */
+      transparent 100%
+    );
+    border-radius: calc(0.75rem + 4px); /* for rounded-xl (0.75rem) + inset */
+    z-index: -1; 
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    animation: rotate-glow 4s linear infinite paused;
+    filter: blur(8px); /* Softens the glow */
+  }
+
+  .glow-wrapper:hover::before {
+    opacity: 1;
+    animation-play-state: running;
+  }
+
+  .snowflake {
+    @apply pointer-events-none fixed top-[-10%] z-[9999] rounded-full;
+    background-color: #e0e7ff; /* A light, slightly blue gray */
+    box-shadow: 0 0 2px 0px rgba(0,0,0,0.1); /* Subtle shadow for pop */
+    animation: fall linear infinite;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes rotate-glow {
+  0% {
+    --glow-angle: 0deg;
+  }
+  100% {
+    --glow-angle: 360deg;
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  100% {
+    transform: translateY(110vh) translateX(15vw);
+  }
+}
