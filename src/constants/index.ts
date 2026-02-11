@@ -13,6 +13,7 @@ export const NAV_LINKS: NavItem[] = [
   { label: 'Live DIY Stations', href: '/diy-stations' },
   { label: 'Art Classes', href: '/art-classes' },
   { label: 'Events', href: '/events' },
+  { label: "Valentine's", href: '/valentines' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -118,6 +119,12 @@ export interface GalleryMedia {
 }
 
 export const GALLERY_ITEMS: GalleryMedia[] = [
+  // Valentine's Images
+  { id: 'gallery-valentines-1', src: 'https://picsum.photos/seed/vday1/600/600', alt: 'Romantic Heart Gift Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-2', src: 'https://picsum.photos/seed/vday2/600/600', alt: 'Custom Couple Mugs', type: 'image', category: ['valentines', 'gifting'], aiHint: 'couple mugs' },
+  { id: 'gallery-valentines-3', src: 'https://picsum.photos/seed/vday3/600/600', alt: 'Personalized Love Frame', type: 'image', category: ['valentines', 'gifting'], aiHint: 'love frame' },
+  { id: 'gallery-valentines-4', src: 'https://picsum.photos/seed/vday4/600/600', alt: '"I Love You" Hamper', type: 'image', category: ['valentines', 'gifting'], aiHint: 'gift hamper' },
+
   // Gifting Images
   { id: 'gallery-gifting-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1751467014/IMG-20250701-WA0055_whfybr.jpg', alt: 'Customized Gift Piece', type: 'image', category: ['gifting'], aiHint: 'custom gift' },
   { id: 'gallery-gifting-2', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1751466996/IMG-20250701-WA0027_cbuc1s.jpg', alt: 'Customized Gift Piece', type: 'image', category: ['gifting'], aiHint: 'custom gift' },
@@ -236,6 +243,7 @@ export const GALLERY_ITEMS: GalleryMedia[] = [
 
 export const WHATSAPP_LINK = "https://wa.me/919403420909?text=Hello%20HappyArts!";
 export const RAKSHABANDHAN_WHATSAPP_LINK = "https://wa.me/919403420909?text=Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Rakshabandhan%20Specials.";
+export const VALENTINES_WHATSAPP_LINK = "https://wa.me/919403420909?text=Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Valentine's%20Specials.";
 export const INSTAGRAM_LINK = "https://www.instagram.com/happy_arts_13?igsh=MTZtNDRraWh4OGR1aQ==";
 export const EMAIL_LINK = "mailto:dhritisolanki80@gmail.com";
 

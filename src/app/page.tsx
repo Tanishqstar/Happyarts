@@ -16,6 +16,7 @@ import { SERVICES, GALLERY_ITEMS, WHATSAPP_LINK } from '@/constants';
 import type { GalleryMedia } from '@/constants';
 import { InfiniteScroller } from '@/components/infinite-scroller';
 import { TestimonialsSection } from '@/components/testimonials-section';
+import { ValentinesSection } from '@/components/valentines-section';
 
 export default function HomePage() {
   // Easter egg state
@@ -150,6 +151,8 @@ export default function HomePage() {
 
       <TestimonialsSection />
 
+      <ValentinesSection />
+
       <SectionWrapper 
         title="Let's Create Together!" 
         subtitle="Get In Touch"
@@ -170,5 +173,3 @@ export default function HomePage() {
     </>
   );
 }
-
-    
