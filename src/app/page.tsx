@@ -86,6 +86,8 @@ export default function HomePage() {
       )}
       <HeroSection />
 
+      <ValentinesSection />
+
       <SectionWrapper 
         id="services" 
         title="Our Creative Services" 
@@ -150,8 +152,6 @@ export default function HomePage() {
       </SectionWrapper>
 
       <TestimonialsSection />
-
-      <ValentinesSection />
 
       <SectionWrapper 
         title="Let's Create Together!" 
