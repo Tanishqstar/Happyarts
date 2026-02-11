@@ -13,7 +13,6 @@ export const NAV_LINKS: NavItem[] = [
   { label: 'Live DIY Stations', href: '/diy-stations' },
   { label: 'Art Classes', href: '/art-classes' },
   { label: 'Events', href: '/events' },
-  { label: "Valentine's", href: '/valentines' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -107,6 +106,21 @@ export const SERVICES: ServiceDetails[] = [
     galleryImageHints: ['special event', 'party decoration', 'corporate event'],
     whatsappEnquiryText: "Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Special%20Events.",
   },
+  {
+    slug: 'valentines',
+    title: "Valentine's Gifts",
+    subtitle: 'Celebrate Love with Handcrafted Treasures',
+    shortDescription: 'Unique, romantic gifts for your special someone, artfully made by hand.',
+    longDescription: [
+        "Express your love in the most personal way with a custom-made gift from HappyArts. Our Valentine's collection is all about capturing romantic moments and creating keepsakes that will be treasured for years to come.",
+        "From personalized portraits and custom-engraved items to luxurious gift hampers filled with handcrafted goodies, we help you create a one-of-a-kind expression of your affection. Let's work together to make this Valentine's Day truly unforgettable."
+    ],
+    icon: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/e_background_removal/f_png/v1748952549/IMG-20250603-WA0014_r9h23z.jpg',
+    coverImage: 'https://picsum.photos/seed/valentines-cover/1200/600',
+    aiHint: 'valentines gift',
+    galleryImageHints: ['valentines', 'love', 'heart', 'couple'],
+    whatsappEnquiryText: "Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Valentine's%20Specials.",
+  }
 ];
 
 export interface GalleryMedia {
@@ -249,3 +263,4 @@ export const EMAIL_LINK = "mailto:dhritisolanki80@gmail.com";
 
     
     
+
