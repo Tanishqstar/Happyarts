@@ -116,7 +116,7 @@ export const SERVICES: ServiceDetails[] = [
         "From personalized portraits and custom-engraved items to luxurious gift hampers filled with handcrafted goodies, we help you create a one-of-a-kind expression of your affection. Let's work together to make this Valentine's Day truly unforgettable."
     ],
     icon: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/e_background_removal/f_png/v1748952549/IMG-20250603-WA0014_r9h23z.jpg',
-    coverImage: 'https://picsum.photos/seed/valentines-cover/1200/600',
+    coverImage: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808508/IMG-20260208-WA0089_eugdsm.jpg',
     aiHint: 'valentines gift',
     galleryImageHints: ['valentines', 'love', 'heart', 'couple'],
     whatsappEnquiryText: "Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Valentine's%20Specials.",
@@ -134,14 +134,22 @@ export interface GalleryMedia {
 
 export const GALLERY_ITEMS: GalleryMedia[] = [
   // Valentine's Images
-  { id: 'gallery-valentines-1', src: 'https://picsum.photos/seed/vday1/600/600', alt: 'Romantic Heart Gift Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
-  { id: 'gallery-valentines-2', src: 'https://picsum.photos/seed/vday2/600/600', alt: 'Custom Couple Mugs', type: 'image', category: ['valentines', 'gifting'], aiHint: 'couple mugs' },
-  { id: 'gallery-valentines-3', src: 'https://picsum.photos/seed/vday3/600/600', alt: 'Personalized Love Frame', type: 'image', category: ['valentines', 'gifting'], aiHint: 'love frame' },
-  { id: 'gallery-valentines-4', src: 'https://picsum.photos/seed/vday4/600/600', alt: '"I Love You" Hamper', type: 'image', category: ['valentines', 'gifting'], aiHint: 'gift hamper' },
-  { id: 'gallery-valentines-5', src: 'https://picsum.photos/seed/vday5/600/600', alt: 'Engraved Jewelry Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'jewelry box' },
-  { id: 'gallery-valentines-6', src: 'https://picsum.photos/seed/vday6/600/600', alt: 'Hand-painted Portrait', type: 'image', category: ['valentines', 'gifting'], aiHint: 'portrait painting' },
-  { id: 'gallery-valentines-7', src: 'https://picsum.photos/seed/vday7/600/600', alt: 'Scented Candle Set', type: 'image', category: ['valentines', 'gifting'], aiHint: 'candle set' },
-  { id: 'gallery-valentines-8', src: 'https://picsum.photos/seed/vday8/600/600', alt: 'Luxury Chocolate Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'chocolate box' },
+  { id: 'gallery-valentines-new-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808508/IMG-20260208-WA0089_eugdsm.jpg', alt: "Valentine's Gift Arrangement", type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-2', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808506/IMG-20260208-WA0083_xp52bx.jpg', alt: 'Couple Frame Gift', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-3', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808506/IMG-20260208-WA0078_alrdwx.jpg', alt: 'Heart-shaped Gift Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-4', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808504/IMG-20260208-WA0074_vvjatj.jpg', alt: 'Personalized Photo Gift', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-5', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808504/IMG-20260208-WA0072_m9vzex.jpg', alt: 'Romantic Gift Hamper', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-6', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808502/IMG-20260208-WA0070_vgob63.jpg', alt: 'Red Themed Gift Set', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-7', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808501/IMG-20260208-WA0068_litgqi.jpg', alt: 'Custom Engraved Gift', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-8', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808501/IMG-20260208-WA0066_eia7qw.jpg', alt: 'Valentine Chocolate Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-9', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808499/IMG-20260208-WA0064_t9i5k9.jpg', alt: 'Love Themed Present', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-10', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808498/IMG-20260208-WA0062_nrpeal.jpg', alt: 'Couple Anniversary Gift', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-11', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808498/IMG-20260208-WA0058_no3niv.jpg', alt: 'Valentine Hamper', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-12', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808497/IMG-20260208-WA0060_ausddy.jpg', alt: 'Rose and Gift Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-13', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808495/IMG-20260208-WA0056_yechb3.jpg', alt: 'Special Gift for Him', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-14', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808495/IMG-20260208-WA0052_ltci65.jpg', alt: 'Special Gift for Her', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-15', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808493/IMG-20260208-WA0050_s7b6eq.jpg', alt: 'Elegant Valentine Gift', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
+  { id: 'gallery-valentines-new-16', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1770808494/IMG-20260208-WA0054_fwbrdu.jpg', alt: 'Luxury Valentine Hamper', type: 'image', category: ['valentines', 'gifting'], aiHint: 'valentines gift' },
 
   // Gifting Images
   { id: 'gallery-gifting-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1751467014/IMG-20250701-WA0055_whfybr.jpg', alt: 'Customized Gift Piece', type: 'image', category: ['gifting'], aiHint: 'custom gift' },
