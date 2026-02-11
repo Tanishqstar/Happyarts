@@ -138,6 +138,10 @@ export const GALLERY_ITEMS: GalleryMedia[] = [
   { id: 'gallery-valentines-2', src: 'https://picsum.photos/seed/vday2/600/600', alt: 'Custom Couple Mugs', type: 'image', category: ['valentines', 'gifting'], aiHint: 'couple mugs' },
   { id: 'gallery-valentines-3', src: 'https://picsum.photos/seed/vday3/600/600', alt: 'Personalized Love Frame', type: 'image', category: ['valentines', 'gifting'], aiHint: 'love frame' },
   { id: 'gallery-valentines-4', src: 'https://picsum.photos/seed/vday4/600/600', alt: '"I Love You" Hamper', type: 'image', category: ['valentines', 'gifting'], aiHint: 'gift hamper' },
+  { id: 'gallery-valentines-5', src: 'https://picsum.photos/seed/vday5/600/600', alt: 'Engraved Jewelry Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'jewelry box' },
+  { id: 'gallery-valentines-6', src: 'https://picsum.photos/seed/vday6/600/600', alt: 'Hand-painted Portrait', type: 'image', category: ['valentines', 'gifting'], aiHint: 'portrait painting' },
+  { id: 'gallery-valentines-7', src: 'https://picsum.photos/seed/vday7/600/600', alt: 'Scented Candle Set', type: 'image', category: ['valentines', 'gifting'], aiHint: 'candle set' },
+  { id: 'gallery-valentines-8', src: 'https://picsum.photos/seed/vday8/600/600', alt: 'Luxury Chocolate Box', type: 'image', category: ['valentines', 'gifting'], aiHint: 'chocolate box' },
 
   // Gifting Images
   { id: 'gallery-gifting-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1751467014/IMG-20250701-WA0055_whfybr.jpg', alt: 'Customized Gift Piece', type: 'image', category: ['gifting'], aiHint: 'custom gift' },
@@ -260,7 +264,3 @@ export const RAKSHABANDHAN_WHATSAPP_LINK = "https://wa.me/919403420909?text=Hell
 export const VALENTINES_WHATSAPP_LINK = "https://wa.me/919403420909?text=Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Valentine's%20Specials.";
 export const INSTAGRAM_LINK = "https://www.instagram.com/happy_arts_13?igsh=MTZtNDRraWh4OGR1aQ==";
 export const EMAIL_LINK = "mailto:dhritisolanki80@gmail.com";
-
-    
-    
-
