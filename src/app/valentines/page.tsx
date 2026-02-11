@@ -102,7 +102,7 @@ export default function ValentinesPage() {
       {circularGalleryMedia.length > 0 && (
         <SectionWrapper title="Romantic Creations" subtitle="From the Heart" className="bg-muted/40">
           <div className="relative h-[60vh]">
-            <CircularGallery items={circularGalleryMedia.map(item => ({ image: item.src, text: item.alt }))} textColor="hsl(var(--foreground))" />
+            <CircularGallery items={circularGalleryMedia} textColor="hsl(var(--foreground))" />
           </div>
           <div className="mt-12 text-center">
             <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10">
