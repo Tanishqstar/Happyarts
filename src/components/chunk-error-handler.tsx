@@ -2,22 +2,34 @@
 
 import { useEffect } from 'react';
 
+const CHUNK_ERROR_MESSAGES = [
+  'Loading chunk',    // Standard Webpack/Next.js message
+  'ChunkLoadError',     // Another common variant
+];
+
 export function ChunkErrorHandler() {
   useEffect(() => {
-    const errorHandler = (event: ErrorEvent) => {
-      // This is a common Next.js error when a new version is deployed.
-      // The user's browser has old JS files cached, and when they navigate,
-      // it tries to load a chunk that no longer exists. A reload fixes it.
-      if (event.message && (event.message.includes('Loading chunk') || event.message.includes('ChunkLoadError'))) {
+    const handleChunkError = (event: ErrorEvent | PromiseRejectionEvent) => {
+      const error = 'reason' in event ? event.reason : event.error;
+      
+      if (!error || typeof error.message !== 'string') {
+        return;
+      }
+
+      if (CHUNK_ERROR_MESSAGES.some(msg => error.message.includes(msg))) {
         console.warn('A JavaScript chunk failed to load, which can happen after a new deployment. The page will now be reloaded to fetch the latest version.');
         window.location.reload();
       }
     };
 
-    window.addEventListener('error', errorHandler);
+    // For synchronous errors
+    window.addEventListener('error', handleChunkError);
+    // For errors in promises (like dynamic imports)
+    window.addEventListener('unhandledrejection', handleChunkError);
 
     return () => {
-      window.removeEventListener('error', errorHandler);
+      window.removeEventListener('error', handleChunkError);
+      window.removeEventListener('unhandledrejection', handleChunkError);
     };
   }, []);
 
