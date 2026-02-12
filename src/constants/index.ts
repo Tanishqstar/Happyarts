@@ -13,6 +13,7 @@ export const NAV_LINKS: NavItem[] = [
   { label: 'Live DIY Stations', href: '/diy-stations' },
   { label: 'Art Classes', href: '/art-classes' },
   { label: 'Events', href: '/events' },
+  { label: 'Valentine\'s', href: "/valentines" },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -289,3 +290,5 @@ export const RAKSHABANDHAN_WHATSAPP_LINK = "https://wa.me/919403420909?text=Hell
 export const VALENTINES_WHATSAPP_LINK = "https://wa.me/919403420909?text=Hello%20HappyArts!%20I'd%20like%20to%20enquire%20about%20your%20Valentine's%20Specials.";
 export const INSTAGRAM_LINK = "https://www.instagram.com/happy_arts_13?igsh=MTZtNDRraWh4OGR1aQ==";
 export const EMAIL_LINK = "mailto:dhritisolanki80@gmail.com";
+
+    
