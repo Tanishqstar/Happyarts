@@ -164,11 +164,12 @@ h1, h2, h3, h4, h5, h6 {
     animation-play-state: running;
   }
 
-  .snowflake {
-    @apply pointer-events-none fixed top-[-10%] z-[9999] rounded-full;
-    background-color: #e0e7ff; /* A light, slightly blue gray */
-    box-shadow: 0 0 2px 0px rgba(0,0,0,0.1); /* Subtle shadow for pop */
-    animation: fall linear infinite;
+  .heart {
+    @apply pointer-events-none absolute text-primary;
+    top: -5%;
+    will-change: transform;
+    animation: heart-fall linear infinite;
+    text-shadow: 0 0 5px hsl(var(--primary) / 0.5);
   }
 }
 
@@ -187,11 +188,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@keyframes fall {
+@keyframes heart-fall {
   0% {
-    transform: translateY(0) translateX(0);
+    transform: translateY(0vh) translateX(0vw) rotate(0deg);
   }
   100% {
-    transform: translateY(110vh) translateX(15vw);
+    transform: translateY(105vh) translateX(5vw) rotate(20deg);
   }
 }

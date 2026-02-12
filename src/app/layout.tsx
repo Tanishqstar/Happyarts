@@ -7,7 +7,6 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import { GlobalClickSpark } from '@/components/ui/global-click-spark'; // Import GlobalClickSpark
-import Snowfall from '@/components/snowfall';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -40,7 +39,6 @@ export default function RootLayout({
         )}
         style={{ overscrollBehaviorX: "auto" }}
       >
-        <Snowfall />
         <div className="relative flex min-h-screen flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>
