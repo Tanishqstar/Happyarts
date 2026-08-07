@@ -8,6 +8,7 @@ export interface NavItem {
 }
 
 export const NAV_LINKS: NavItem[] = [
+  { label: 'Raksha Bandhan', href: '/rakshabandhan' },
   { label: 'Customized Gifting', href: '/gifting' },
   { label: 'Workshops', href: '/workshops' },
   { label: 'Live DIY Stations', href: '/diy-stations' },

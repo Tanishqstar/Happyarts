@@ -16,7 +16,7 @@ import { SERVICES, GALLERY_ITEMS, WHATSAPP_LINK } from '@/constants';
 import type { GalleryMedia } from '@/constants';
 import { InfiniteScroller } from '@/components/infinite-scroller';
 import { TestimonialsSection } from '@/components/testimonials-section';
-import { ValentinesSection } from '@/components/valentines-section';
+import { RakshabandhanSection } from '@/components/rakshabandhan-section';
 
 export default function HomePage() {
   // Easter egg state
@@ -86,7 +86,7 @@ export default function HomePage() {
       )}
       <HeroSection />
 
-      <ValentinesSection />
+      <RakshabandhanSection />
 
       <SectionWrapper 
         id="services" 
