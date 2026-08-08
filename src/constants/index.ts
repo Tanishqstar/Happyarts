@@ -268,17 +268,54 @@ export const GALLERY_ITEMS: GalleryMedia[] = [
   { id: 'gallery-event-9', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1751615677/IMG-20250703-WA0061_e7fier.jpg', alt: 'Special Event', type: 'image', category: ['events'], aiHint: 'special event'},
   { id: 'gallery-event-10', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1751615677/IMG-20250703-WA0059_a8s5gv.jpg', alt: 'Event Moment', type: 'image', category: ['events'], aiHint: 'event moment'},
   
-  // Rakshabandhan Images
-  { id: 'gallery-rakhi-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201293/WhatsApp_Image_2025-07-18_at_14.35.52_emr8xm.jpg', alt: 'Handcrafted Rakhi', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi handcrafted' },
-  { id: 'gallery-rakhi-2', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201293/WhatsApp_Image_2025-07-18_at_14.35.50_1_kmjoqo.jpg', alt: 'Rakhi Gift Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper' },
-  { id: 'gallery-rakhi-3', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201292/WhatsApp_Image_2025-07-18_at_14.35.53_2_g3natu.jpg', alt: 'Designer Rakhi', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi designer' },
-  { id: 'gallery-rakhi-4', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201291/WhatsApp_Image_2025-07-18_at_14.35.53_vsicnn.jpg', alt: 'Rakhi Collection', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi collection' },
-  { id: 'gallery-rakhi-5', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201290/WhatsApp_Image_2025-07-18_at_14.41.03_kzsh1y.jpg', alt: 'Elegant Rakhi', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi elegant' },
-  { id: 'gallery-rakhi-6', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201290/WhatsApp_Image_2025-07-18_at_14.35.52_1_jtiyxo.jpg', alt: 'Artistic Rakhi', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi artistic' },
-  { id: 'gallery-rakhi-7', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201288/WhatsApp_Image_2025-07-18_at_14.35.53_1_of5nrl.jpg', alt: 'Brother Sister Rakhi', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi brother' },
-  { id: 'gallery-rakhi-8', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201288/WhatsApp_Image_2025-07-18_at_14.41.03_1_nvg6ot.jpg', alt: 'Rakhi Special', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi special' },
-  { id: 'gallery-rakhi-9', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201288/WhatsApp_Image_2025-07-18_at_14.41.05_rhtahl.jpg', alt: 'Modern Rakhi', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi modern' },
-  { id: 'gallery-rakhi-video', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1753201589/WhatsApp_Video_2025-07-18_at_14.41.42_gmtzfc.mp4', alt: 'Rakhi Celebration Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi video' },
+  // Rakshabandhan Images & Videos
+  // Rakhi hamper videos
+  { id: 'gallery-rakhi-hamper-vid-1', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027325/WhatsApp_Video_2026-07-23_at_6.40.51_PM_gw42xw.mp4', alt: 'Rakhi Hamper Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi hamper video' },
+  { id: 'gallery-rakhi-hamper-vid-2', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027322/WhatsApp_Video_2026-07-23_at_6.40.17_PM_dfeznk.mp4', alt: 'Rakhi Hamper Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi hamper video' },
+  { id: 'gallery-rakhi-hamper-vid-3', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027320/WhatsApp_Video_2026-07-23_at_6.40.32_PM_tuespe.mp4', alt: 'Rakhi Hamper Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi hamper video' },
+  
+  // Rakhi gift videos
+  { id: 'gallery-rakhi-gift-vid-1', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027320/WhatsApp_Video_2026-07-23_at_6.40.01_PM_raryfj.mp4', alt: 'Rakhi Gift Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi gift video' },
+  { id: 'gallery-rakhi-gift-vid-2', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027316/WhatsApp_Video_2026-07-23_at_6.39.57_PM_llsvdc.mp4', alt: 'Rakhi Gift Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi gift video' },
+  { id: 'gallery-rakhi-gift-vid-3', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027315/WhatsApp_Video_2026-07-23_at_6.37.58_PM_oeiivt.mp4', alt: 'Rakhi Gift Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi gift video' },
+  
+  // Rakhi collection video
+  { id: 'gallery-rakhi-collection-vid-1', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027315/WhatsApp_Video_2026-07-23_at_6.38.16_PM_jkfsiw.mp4', alt: 'Rakhi Collection Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi collection video' },
+
+  // Photo album rakhi video
+  { id: 'gallery-rakhi-photo-album-vid-1', src: 'https://res.cloudinary.com/dsdp8sjkh/video/upload/v1786027324/WhatsApp_Video_2026-07-23_at_6.40.11_PM_oppprx.mp4', alt: 'Photo Album Rakhi Video', type: 'video', category: ['rakshabandhan'], aiHint: 'rakhi photo album video' },
+
+  // Rakhi images
+  { id: 'gallery-rakhi-img-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027314/WhatsApp_Image_2026-07-23_at_6.41.37_PM_w16jvn.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-2', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027314/WhatsApp_Image_2026-07-23_at_6.41.35_PM_burbws.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-3', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027313/WhatsApp_Image_2026-07-23_at_6.41.31_PM_jvnazm.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-4', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027312/WhatsApp_Image_2026-07-23_at_6.41.19_PM_fsisv1.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-5', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027312/WhatsApp_Image_2026-07-23_at_6.41.16_PM_shrwjp.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-6', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027311/WhatsApp_Image_2026-07-23_at_6.41.11_PM_zcnjlg.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-7', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027311/WhatsApp_Image_2026-07-23_at_6.41.11_PM_1_fvkd6k.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-8', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027306/WhatsApp_Image_2026-07-23_at_6.40.20_PM_m2scoo.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-9', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027305/WhatsApp_Image_2026-07-23_at_6.40.20_PM_1_nylgj0.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-10', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027305/WhatsApp_Image_2026-07-23_at_6.40.19_PM_uewjfg.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-11', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027304/WhatsApp_Image_2026-07-23_at_6.40.19_PM_2_h393ps.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+  { id: 'gallery-rakhi-img-12', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027304/WhatsApp_Image_2026-07-23_at_6.40.19_PM_1_ffi8ci.jpg', alt: 'Rakhi Design', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi image' },
+
+  // Rakhi gift images
+  { id: 'gallery-rakhi-gift-img-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027310/WhatsApp_Image_2026-07-23_at_6.41.05_PM_ydrd4k.jpg', alt: 'Rakhi Gift', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi gift image' },
+  { id: 'gallery-rakhi-gift-img-2', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027310/WhatsApp_Image_2026-07-23_at_6.41.05_PM_1_wcuat2.jpg', alt: 'Rakhi Gift', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi gift image' },
+  { id: 'gallery-rakhi-gift-img-3', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027309/WhatsApp_Image_2026-07-23_at_6.41.01_PM_cjrsem.jpg', alt: 'Rakhi Gift', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi gift image' },
+  { id: 'gallery-rakhi-gift-img-4', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027309/WhatsApp_Image_2026-07-23_at_6.40.56_PM_ft3goe.jpg', alt: 'Rakhi Gift', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi gift image' },
+  { id: 'gallery-rakhi-gift-img-5', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027289/WhatsApp_Image_2026-07-23_at_6.38.11_PM_x6evjs.jpg', alt: 'Rakhi Gift', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi gift image' },
+  { id: 'gallery-rakhi-gift-img-6', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027288/WhatsApp_Image_2026-07-23_at_6.38.10_PM_v4ewnz.jpg', alt: 'Rakhi Gift', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi gift image' },
+
+  // Rakhi Hamper images
+  { id: 'gallery-rakhi-hamper-img-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027308/WhatsApp_Image_2026-07-23_at_6.40.55_PM_ihd0jx.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-2', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027308/WhatsApp_Image_2026-07-23_at_6.40.33_PM_rstraz.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-3', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027308/WhatsApp_Image_2026-07-23_at_6.40.32_PM_fj4tqk.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-4', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027307/WhatsApp_Image_2026-07-23_at_6.40.21_PM_kjvwnw.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-5', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027307/WhatsApp_Image_2026-07-23_at_6.40.21_PM_2_j3vqgx.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-6', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027306/WhatsApp_Image_2026-07-23_at_6.40.21_PM_1_j3aikd.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-7', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027303/WhatsApp_Image_2026-07-23_at_6.40.11_PM_hzuwvf.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
+  { id: 'gallery-rakhi-hamper-img-8', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1786027297/WhatsApp_Image_2026-07-23_at_6.40.07_PM_svro0a.jpg', alt: 'Rakhi Hamper', type: 'image', category: ['rakshabandhan'], aiHint: 'rakhi hamper image' },
 
   // Diwali Images
   { id: 'gallery-diwali-1', src: 'https://res.cloudinary.com/dsdp8sjkh/image/upload/v1753201290/WhatsApp_Image_2025-07-18_at_14.35.51_b26fih.jpg', alt: 'Diwali Lamp', type: 'image', category: ['diwali'], aiHint: 'diwali lamp' },

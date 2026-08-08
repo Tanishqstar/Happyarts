@@ -12,6 +12,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 interface GalleryItemProps extends GalleryMedia {
   className?: string;
   allowModal?: boolean;
+  useTrueAspectRatio?: boolean;
 }
 
 export function GalleryItem({
@@ -22,6 +23,7 @@ export function GalleryItem({
   className,
   type,
   allowModal = false,
+  useTrueAspectRatio = false,
 }: GalleryItemProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -91,12 +93,12 @@ export function GalleryItem({
         )}
       >
         <CardContent className="p-0">
-          <div className="aspect-square relative bg-muted">
+          <div className={cn("relative bg-muted", !useTrueAspectRatio && type !== 'video' ? "aspect-square" : "")}>
             {type === 'video' ? (
               <video
                 src={src}
                 controls
-                className="w-full h-full object-cover"
+                className="w-full h-auto block"
                 aria-label={alt}
                 playsInline
                 preload="metadata"
@@ -105,13 +107,23 @@ export function GalleryItem({
               </video>
             ) : (
               <>
-                <Image
-                  src={src}
-                  alt={alt}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  data-ai-hint={aiHint}
-                />
+                {useTrueAspectRatio ? (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    src={src}
+                    alt={alt}
+                    className="w-full h-auto block transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint={aiHint}
+                  />
+                ) : (
+                  <Image
+                    src={src}
+                    alt={alt}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    data-ai-hint={aiHint}
+                  />
+                )}
                  {/* On non-mobile, show text overlay on hover */}
                 {isMobile === false && (
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">

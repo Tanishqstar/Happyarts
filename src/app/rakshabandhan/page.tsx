@@ -12,6 +12,7 @@ import Link from 'next/link';
 
 export default function RakshabandhanPage() {
   const rakhiItems = GALLERY_ITEMS.filter(item => item.category?.includes('rakshabandhan'));
+  const carouselItems = rakhiItems.filter(item => item.type === 'image');
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50/50 via-white to-background dark:from-amber-950/20 dark:via-background dark:to-background relative">
@@ -47,11 +48,11 @@ export default function RakshabandhanPage() {
       <SectionWrapper title="All Rakhi Designs" subtitle="Browse The Full Catalog" className="relative z-10 pt-16">
         <div className="max-w-6xl mx-auto">
           {rakhiItems.length > 0 ? (
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-4 md:gap-6 lg:gap-8 space-y-4 md:space-y-6 lg:space-y-8">
               {rakhiItems.map((item) => (
-                <div key={`${item.id}-grid`} className="group relative overflow-hidden rounded-xl border border-amber-200/50 dark:border-amber-800/30 bg-white/50 dark:bg-black/20 p-2 shadow-sm transition-all hover:shadow-md hover:border-amber-400/50">
+                <div key={`${item.id}-grid`} className="break-inside-avoid group relative overflow-hidden rounded-xl border border-amber-200/50 dark:border-amber-800/30 bg-white/50 dark:bg-black/20 p-2 shadow-sm transition-all hover:shadow-md hover:border-amber-400/50 mb-4 md:mb-6 lg:mb-8">
                    <div className="absolute inset-0 bg-gradient-to-tr from-amber-100/20 to-transparent dark:from-amber-900/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                   <GalleryItem {...item} allowModal />
+                   <GalleryItem {...item} allowModal useTrueAspectRatio={true} />
                 </div>
               ))}
             </div>
@@ -64,7 +65,7 @@ export default function RakshabandhanPage() {
       </SectionWrapper>
 
       {/* Interactive 3D Carousel Section */}
-      {rakhiItems.length > 0 && (
+      {carouselItems.length > 0 && (
         <section className="w-full h-[500px] md:h-[600px] lg:h-[700px] relative z-10 my-12" id="collection">
           <div className="absolute inset-0 bg-amber-100/30 dark:bg-amber-900/10 skew-y-2 transform origin-left z-0"></div>
           <div className="absolute top-8 left-0 right-0 text-center z-20 pointer-events-none">
@@ -72,7 +73,7 @@ export default function RakshabandhanPage() {
             <p className="text-sm text-foreground/60 uppercase tracking-widest">Drag to explore</p>
           </div>
           <div className="relative w-full h-full z-10 cursor-grab active:cursor-grabbing">
-            <CircularGallery items={rakhiItems} bend={2} textColor="#d97706" borderRadius={0.05} />
+            <CircularGallery items={carouselItems} bend={2} textColor="#d97706" borderRadius={0.05} />
           </div>
         </section>
       )}
